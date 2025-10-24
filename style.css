@@ -1,0 +1,142 @@
+:root {
+    --black: #1E1E1E;
+    --white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 15px;
+    overflow-wrap: break-word;
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10rem;
+    padding: 20px 50px 30px;
+}
+
+button {
+    background-color: black;
+    border: unset;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);    
+}
+
+.container img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+#infos{
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+h3{
+    font-size: 3.5rem;
+    padding: 5px;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    overflow-wrap: break-word;
+}
+
+h3, h4, p{
+    padding: 0 20px 5px 35px;
+}
+
+.fine-text {
+    font-weight: 100; /* Utilisation d'une valeur faible pour le poids de la police */
+    font-style: normal; /* Style normal (pas italique) */
+}
+
+#map-container {
+    position: relative;
+    width: 500px; /* Vous pouvez ajuster la taille */
+    margin: 25px auto;
+}
+
+#img_france {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+}
+
+.animated {
+    animation: fadeInRight 5s ease;
+}
+
+@keyframes fadeInRight {    
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }        
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* Classe pour rendre une image en noir et blanc */
+.grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.5s; /* Pour un effet de transition fluide */
+}
+
+    
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les monuments</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Les monuments</h1>
+        <h2>Cliquez sur un monument ou son bouton pour obtenir une description</h2>
+    </header>
+
+    <div class="btn">
+        <button onclick="showMonument('tour_eiffel')">Tour Eiffel</button>
+        <button onclick="showMonument('notre_dame')">Notre-Dame</button>
+        <button onclick="showMonument('arc_de_triomphe')">Arc de Triomphe</button>
+        <button onclick="showMonument('mont_saint_michel')">Mont Saint-Michel</button>
+        <button onclick="showMonument('versailles')">Versailles</button>
+    </div>
+
+    <div class="container">
+        <img id="img_tour_eiffel" src="./images/tour_eiffel.webp" onclick="showMonument('tour_eiffel')" alt="la tour eiffel">
+        <img id="img_notre_dame" src="./images/notre_dame.webp" onclick="showMonument('notre_dame')" alt="notre dame de paris">
+        <img id="img_arc_de_triomphe" src="./images/arc_de_triomphe.webp" onclick="showMonument('arc_de_triomphe')" alt="l'arc de triomphe">
+        <img id="img_mont_saint_michel" src="./images/mont_saint_michel.webp" onclick="showMonument('mont_saint_michel')" alt="le mont saint michel">
+        <img id="img_versailles" src="./images/versailles.webp" onclick="showMonument('versailles')" alt="château de versailles">
+    </div>
+
+    <section>
+        <div id="infos">
+            <h3 id="name"></h3>
+            <h4 id="city"></h3>
+            <p id="description"></p>
+            <!-- Conteneur pour l'image de la France et les marqueurs -->
+            <div id="map-container">
+                <img id="img_france" src="" alt="">
+                <!-- Les marqueurs seront placés ici -->
+                <div id="marker" style="display: none; position: absolute; width: 30px; height: 30px; pointer-events: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" style="width: 100%; height: 100%; color: red;">
+                        <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
