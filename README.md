@@ -60,7 +60,7 @@ L’utilisateur peut :
 - Ajouter un système de **filtrage** par région ou type de monument  
 - Connecter une **API publique** pour enrichir les données  
 - Créer un mode **nuit / jour** pour le confort visuel  
-- Améliorer l’accessibilité et les animations
+- Améliorer l’accessibilité et les animations  
 - Design responsive pour s’adapter à tous les écrans  
 
 ---
@@ -70,17 +70,18 @@ L’utilisateur peut :
 Ce projet a été réalisé dans le cadre de ma formation **Développeuse Web et Web Mobile** chez **Simplon Hauts-de-France**.  
 J’ai particulièrement apprécié la partie **carte interactive**, qui m’a permis de comprendre la logique de manipulation d’éléments via JavaScript et d’intégrer des données dynamiques.
 
-📍 **Autrice :** [Julie Charles](https://github.com/Julie-Charles16)  
+📍 **Autrice du projet final et du README :** [Julie Charles](https://github.com/Julie-Charles16)  
 💬 “Un projet simple, mais formateur, qui m’a permis de consolider mes bases en front-end.”
 
 ---
 
 ## 📸 Aperçu du projet
-  
-```markdown
+
 ![Capture du projet](./images/screenshot-monuments.png)
 
+---
 
-## Auteurs
+## 🧑‍🏫 Projet original fourni par
 
-* [Rémy Cottrez](https://github.com/RemyCTRZ)
+* [Rémy Cottrez](https://github.com/RemyCTRZ) — projet pédagogique de départ et README initial.
+
